@@ -1,6 +1,6 @@
-#GrooveFish
+# GrooveFish
 
-I made this project for my friend clement, who could not get over the end of grooveshark.
+I made this project for my friend Clement back in 2016, who could not get over the end of grooveshark.
 
 Basically, this is a youtube backed playlist generator.
 
