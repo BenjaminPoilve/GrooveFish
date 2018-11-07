@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>GROOVEFISH</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.css">
+
+    <link rel="stylesheet" href="/static/css/skeleton.css">
+    <link rel="stylesheet" href="/static/css/custom.css">
+    <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+    <script type="text/javascript" src="/static/js/Autolinker.min.js"></script>
+    <script type="text/javascript" src="/static/js/index.js"></script>
+
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="/static/images/favicon.png">
+
+</head>
+<body>
+    <div class="row">
+        <div class="ten columns" >
+            <a style="margin-top:4px; margin-bottom:-20px;"href="/signOut"> <h5 class="nameTitle">GROOVEFISH</h5></a>
+        </div>
+        <div class="one column smallHidden" >
+        <h6 style="margin-top:12px; margin-bottom:-20px;" id="profileName" ></h6>
+        </div>
+        <div class="one column smallHidden" >
+        <img id="profilePicture" style="margin-top:4px; margin-bottom:-20px;" src="" class="littleroundPicture" />
+        </div>
+
+
+    </div>
+    <hr>
+    <div class="container">
+    <div class="row">
+        <div class="two-thirds column"  id="playlistZone">
+
+            <br>
+            <div class="row">
+                <div id="player-container" style:"visibility: hidden;" >
+                    <div id="player"  style:"visibility: hidden;"></div>
+                </div>
+                    <!--<div id="controller-buttons"  class="friendName" style="margin-top:-10px;">
+                    <div>
+                    <a id="play-pause" onclick="playPause_onClick(this)"><i class="fa fa-pause" aria-hidden="true"></i></a>
+
+                    <a onclick="next_onClick()"><i class="fa fa-step-forward" aria-hidden="true"></i></a>
+                    <a  onclick="volume_onClick(this)"><i class="fa fa-volume-up" aria-hidden="true"></i></a>
+                </div>
+            </div> -->
+                <div class="eight columns " style="margin-left:0%;">
+                    <div class="row">
+                        <div class="one column ">
+                        <a    id="play-pause" onclick="playPause_onClick(this)"><i  class="playpause fa fa-pause " aria-hidden="true"></i></a>
+                        </div>
+                        <div class="eight columns ">
+                        <h5   id="video-title">...</h5>
+                        </div>
+                        <div class="one column ">
+                        <h6 style="margin-top:8px;" id="time"></h6>
+                        </div>
+                </div>
+
+                    <div >
+                        <input  id="slider" style="width:80%;" type="range" min="0" max="100" value="0" tabindex="0" onchange="slider_onChange(this)" onmouseup="slider_onMouseup(this)" onmousedown="slider_onMousedown(this)">
+                    </div>
+                </div>
+                <div class="one columns ">
+                    <img id="playArt" src="" class="roundPicture " />
+                </div>
+
+            </div>
+<br>
+
+
+
+
+        <!-- Queue Column -->
+        <div class="playlist">
+            <table class="u-full-width ">
+
+                <tbody id="queue">
+
+                </table></div>
+        <a style="font-size:0.8em; color:gray;" href="/deletePlaylist"> <h7>delete my playlist</h7></a>
+
+
+
+
+        </div>
+
+
+            <div class="one-third column" id="searchZone">
+
+
+                    <br>
+                    <h6  >Search for music</h6>
+                    <input class="u-full-width"  type="text" placeholder="search" id="search" oninput="search_onInput(this)" onkeydown="search_onKeydown(event)" onclick="search_onClick(this)">
+                    <br>
+                    <div class="playlist">
+                        <table class="u-full-width ">
+
+
+                            <tbody id="search-results">
+
+                            </tbody>
+                        </table></div>
+                    </div>
+
+        </div>
+    </div>
+
+    </body>
+    </html>
